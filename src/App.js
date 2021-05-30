@@ -16,11 +16,6 @@ const Branches=React.lazy(()=>{
 })
 
 const App = (props)=> {
-  useEffect(()=> {
-    props.onAutoLogin();
-  },[]);
-
-
     let routes = (
       <Switch>
         <Route path='/auth' render={(props)=><Auth {...props}/>} />
